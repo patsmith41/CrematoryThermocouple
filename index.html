@@ -109,13 +109,40 @@
     </script>
   </head>
   <body>
+
+
     <!-- Header -->
+
+
     <header class="header">
       <div class="container header-container">
         <div class="header-spacer"></div>
         <div class="logo">
-          <a href="index.html">
-            <h1>Crematory<span>Thermocouple</span></h1>
+          <a
+            href="index.html"
+            style="display: flex; align-items: center; gap: 10px"
+          >
+            <!-- Your Flame Icon -->
+            <img
+              src="images/flame-icon.png"
+              alt=""
+              style="height: 40px; width: auto; transform: translate(6px, -5px)"
+            />
+
+            <!-- The Logo Name as a DIV -->
+            <div
+              style="
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #1a2a3a;
+                line-height: 1;
+              "
+            >
+              Crematory<span style="font-weight: 400; color: #3d5a80"
+                >Thermocouple</span
+              >
+            </div>
           </a>
         </div>
         <nav class="main-nav">
@@ -132,16 +159,17 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#products" class="nav-link">Products</a>
+              <a href="index.html#assemblies" class="nav-link">Products</a>
+            </li>
+           
+            <li class="nav-item">
+              <a href="index.html#why-us" class="nav-link">Why Us</a>
             </li>
             <li class="nav-item">
-              <a href="#quote" class="nav-link">Request a Quote</a>
+              <a href="index.html#faq" class="nav-link">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="#why-us" class="nav-link">Why Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#faq" class="nav-link">FAQ</a>
+              <a href="contact.html" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -151,9 +179,7 @@
               <i class="fas fa-shopping-cart"></i>
               <span class="cart-count">0</span>
             </a>
-          </div>
-          <a href="#quote" class="btn btn-primary">Get A Quote</a>
-        </div>
+        
       </div>
     </header>
 
@@ -164,13 +190,12 @@
           <h1 class="hero-title">Crematory Thermocouples Replacements</h1>
           <p class="hero-subtitle">
             Reliable, American-Made Assemblies to Keep Your Retort Running.
+            <br />Backed by a century of manufacturing excellence.
             <br />Orders before 2pm EST processed same day.
           </p>
           <div class="hero-buttons">
             <a href="#quote" class="btn btn-primary btn-cta">Request a Quote</a>
-            <a href="tel:8006421357" class="btn btn-secondary"
-              >Call: 800-642-1357</a
-            >
+        
           </div>
           <div class="trust-bar">
             <span><i class="fas fa-check"></i> ISO 9001:2015 Certified</span>
@@ -181,230 +206,176 @@
         </div>
       </section>
 
-      <!-- Intro Story Section -->
-      <section class="intro-story section">
-        <div class="container">
-          <p>
-            When a critical thermocouple fails, you need a reliable replacement
-            part you can trust—fast. For over a century, National Basic Sensor
-            has been the expert source for high-quality, durable temperature
-            sensors. We supply standard Type K crematory thermocouple assemblies
-            in all common sizes (12", 18", and 24") that are in stock and ready
-            for same-day processing, ensuring you minimize downtime and maintain
-            operational compliance.
-          </p>
-        </div>
-      </section>
-
-      <!-- Product Section -->
-      <!-- ADDED section-wallpaper class -->
-      <section id="products" class="products section section-wallpaper">
+ 
+      <!-- ============================================ -->
+      <!-- COMPLETE ASSEMBLIES PRODUCT SECTION -->
+      <!-- ============================================ -->
+      <section id="assemblies" class="product-feature section">
         <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Our Products</h2>
-          </div>
-          <div class="product-card-grid">
-            <div class="product-card-new">
-              <div class="card-image"><i class="fas fa-box"></i></div>
-              <div class="card-body">
-                <h3>Complete Thermocouple Assemblies</h3>
-                <p>
-                  The industry-standard solution for reliable temperature
-                  measurement. Our complete, American-made Type K assemblies
-                  include a durable ceramic tube, connection head, and 8-gauge
-                  element.
-                </p>
-                <div class="card-actions">
-                  <a
-                    href="12-inch-crematory-thermocouple.html"
-                    class="btn btn-size"
-                    >12-Inch</a
-                  >
-                  <a
-                    href="18-inch-crematory-thermocouple.html"
-                    class="btn btn-size"
-                    >18-Inch</a
-                  >
-                  <a
-                    href="24-inch-crematory-thermocouple.html"
-                    class="btn btn-size"
-                    >24-Inch</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="product-card-new">
-              <div class="card-image"><i class="fas fa-tools"></i></div>
-              <div class="card-body">
-                <h3>Replacement Elements & Parts</h3>
-                <p>
-                  A cost-effective solution for maintenance and repair. Replace
-                  a worn or failed element without buying a full new assembly.
-                  Terminal blocks also available.
-                </p>
-                <div class="card-actions">
-                  <a href="/products/12-inch-element.html" class="btn btn-size"
-                    >For 12" Assembly</a
-                  >
-                  <a href="/products/18-inch-element.html" class="btn btn-size"
-                    >For 18" Assembly</a
-                  >
-                  <a href="/products/24-inch-element.html" class="btn btn-size"
-                    >For 24" Assembly</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="product-card-new">
-              <div class="card-image">
-                <i class="fas fa-drafting-compass"></i>
-              </div>
-              <div class="card-body">
-                <h3>Custom & OEM Solutions</h3>
-                <p>
-                  Need to match a specific OEM part or require a unique length,
-                  fitting, or material? Our in-house engineers can build a
-                  custom solution for your exact application.
-                </p>
-                <div class="card-actions">
-                  <a href="#quote" class="btn btn-secondary btn-custom-quote"
-                    >Request a Custom Quote</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT FORM SECTION -->
-      <!-- ADDED section-wallpaper class -->
-      <section id="quote" class="contact-section section section-wallpaper">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Request a Quote</h2>
+            <h2 class="section-title">Complete Thermocouple Assemblies</h2>
             <p class="section-subtitle">
-              Have a unique requirement or need to match an OEM part? Fill out
-              the form below, and our specialists will provide a detailed quote.
+              Type K ceramic crematory thermocouple assemblies with 3/4" NPT
+              fittings, manufactured in the USA and built to handle the extreme
+              heat of crematory retort operations.
             </p>
           </div>
-          <div class="form-card-container">
-            <div class="form-card">
-              <form id="quoteForm" novalidate>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="company">Company Name *</label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      placeholder="ABC Crematory Services"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="you@company.com"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="(555) 123-4567"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inquiry_type">What can we help you with? *</label>
-                  <select id="inquiry_type" name="inquiry_type" required>
-                    <option value="" disabled selected>
-                      Select an option...
-                    </option>
-                    <option value="Custom Part Quote">
-                      Request a Quote for a Custom Part
-                    </option>
-                    <option value="Standard Part Quote">
-                      Request a Quote for a Standard Product
-                    </option>
-                    <option value="Part Identification">
-                      Help Identifying a Part
-                    </option>
-                    <option value="Technical Question">
-                      Technical Question
-                    </option>
-                    <option value="Urgent Support">
-                      Urgent / Down Equipment Support
-                    </option>
-                  </select>
-                </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="make_model">Crematory Make/Model</label>
-                    <input
-                      type="text"
-                      id="make_model"
-                      name="make_model"
-                      placeholder="e.g., Matthews, B&L"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="part_number">Existing Part Number</label>
-                    <input
-                      type="text"
-                      id="part_number"
-                      name="part_number"
-                      placeholder="If known"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    placeholder="Please describe your needs. Include details like immersion length, probe location (primary/afterburner), etc."
-                    required
-                  ></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="attachment">Attach a Photo</label>
-                  <input type="file" id="attachment" name="attachment" />
-                  <small
-                    >Optional: A photo of your existing part helps us identify
-                    it quickly.</small
-                  >
-                </div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-cta">
-                    Submit Request
+
+          <div class="product-feature-card">
+            <div class="product-feature-image">
+              <img
+                src="images/complete-assembly.webp"
+                alt="Type K ceramic crematory thermocouple assembly with 3/4 inch NPT fitting, mullite protection tube, and aluminum connection head"
+              />
+            </div>
+
+            <div class="product-feature-content">
+              <h3>Type K Ceramic Assembly with 3/4" NPT Fitting</h3>
+              <p class="product-feature-tagline">
+                Available in 12", 18", and 24" lengths — in stock and ready for
+                same-day processing on orders received before 2 pm EST.
+              </p>
+
+              <div class="product-includes">
+                <h4>A Full Assembly Includes:</h4>
+                <ul>
+                  <li><i class="fas fa-check"></i> Type K 8-gauge element</li>
+                  <li>
+                    <i class="fas fa-check"></i> Ceramic mullite protection tube
+                    (3/4" OD)
+                  </li>
+                  <li><i class="fas fa-check"></i> Terminal block</li>
+                  <li><i class="fas fa-check"></i> Aluminum connection head</li>
+                </ul>
+              </div>
+
+              <div class="product-size-selector">
+                <p class="size-selector-label">Select Length:</p>
+                <div class="size-buttons">
+                  <!-- ECWID: Replace each button below with Ecwid Buy Now widget -->
+                  <button class="btn-size-buy" data-product="assembly-12">
+                    <span class="size-label">12-Inch</span>
+                    <span class="size-price">$88.00</span>
+                  </button>
+                  <button class="btn-size-buy" data-product="assembly-18">
+                    <span class="size-label">18-Inch</span>
+                    <span class="size-price">$103.00</span>
+                  </button>
+                  <button class="btn-size-buy" data-product="assembly-24">
+                    <span class="size-label">24-Inch</span>
+                    <span class="size-price">$118.00</span>
                   </button>
                 </div>
-              </form>
+                <p class="bulk-pricing-note">
+                  <i class="fas fa-tag"></i> Bulk pricing available for orders
+                  of 5 or more
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- ============================================ -->
+      <!-- REPLACEMENT ELEMENT & BLOCK SECTION -->
+      <!-- ============================================ -->
+      <section id="elements" class="product-feature section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Replacement Element &amp; Block</h2>
+            <p class="section-subtitle">
+              A cost-effective alternative to a full assembly replacement. Keep
+              your retort running with a Type K element and terminal block sized
+              for your existing thermocouple.
+            </p>
+          </div>
+
+          <div class="product-feature-card">
+            <div class="product-feature-image">
+              <img
+                src="images/replacement-elements.webp"
+                alt="Type K replacement thermocouple element and terminal block for crematory retort maintenance"
+              />
+            </div>
+
+            <div class="product-feature-content">
+              <h3>Type K Replacement Element &amp; Block</h3>
+              <p class="product-feature-tagline">
+                Designed to replace the internal element and block of your
+                existing crematory thermocouple assembly. Available in lengths
+                to match our 12", 18", and 24" complete assemblies.
+              </p>
+
+              <div class="product-includes">
+                <h4>Each Kit Includes:</h4>
+                <ul>
+                  <li><i class="fas fa-check"></i> Type K 8-gauge element</li>
+                  <li><i class="fas fa-check"></i> Terminal block</li>
+                  <li><i class="fas fa-check"></i> NIST-traceable accuracy</li>
+                  <li><i class="fas fa-check"></i> Made in USA</li>
+                </ul>
+              </div>
+
+              <div class="product-size-selector">
+                <p class="size-selector-label">Select Length:</p>
+                <div class="size-buttons">
+                  <!-- ECWID: Replace each button below with Ecwid Buy Now widget -->
+                  <button class="btn-size-buy" data-product="element-12">
+                    <span class="size-label">For 12" Assembly</span>
+                    <span class="size-price">$42.00</span>
+                  </button>
+                  <button class="btn-size-buy" data-product="element-18">
+                    <span class="size-label">For 18" Assembly</span>
+                    <span class="size-price">$51.00</span>
+                  </button>
+                  <button class="btn-size-buy" data-product="element-24">
+                    <span class="size-label">For 24" Assembly</span>
+                    <span class="size-price">$59.00</span>
+                  </button>
+                </div>
+                <p class="bulk-pricing-note">
+                  <i class="fas fa-question-circle"></i>
+                  Not sure which size? <a href="#contact">Contact us</a> with
+                  your retort make &amp; model.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                <!-- Bottom Banner: Custom & OEM -->
+                <div class="custom-manufacturing-banner">
+                  <div class="banner-content">
+                    <!-- PLACEHOLDER: Use your Inventory Room or Factory Floor photo here -->
+                   
+                  </div>
+                  <div class="banner-content">
+                    <h3>Don't see the length or fitting you need?</h3>
+                    <p>
+                       We will be happy to accommodate you. 
+                       <br>We custom manufacture, calibrate and document a complete line of thermocouples and RTDs.
+                    </p>
+                    <div class="banner-actions">
+                      <a href="contact.html#quote" class="btn btn-primary btn-cta"
+                        >Request Custom Quote</a
+                      >
+                      <span class="banner-call">
+                      
+                        Or visit:
+                        <a href="https://NationalBasicSensor.com" target="_blank" rel="noopener noreferrer">
+                          <strong>NationalBasicSensor.com</strong>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+   
+
+  
       <!-- Why National Basic Sensor -->
       <!-- CHANGED: Added 'section-wallpaper' and removed 'bg-light' class -->
       <section id="why-us" class="features section section-wallpaper">
@@ -412,7 +383,7 @@
           <div class="section-header">
             <h2 class="section-title">Why Choose Us</h2>
           </div>
-          <div class="why-us-content">
+          
             <div class="why-us-text">
               <div class="features-grid">
                 <div class="feature-card">
@@ -421,7 +392,7 @@
                   </div>
                   <h3>Built to Last</h3>
                   <p>
-                    A cheap, unreliable probe can cost you thousands in downtime
+                    An unreliable probe can cost you downtime
                     and repeated replacements. Our assemblies are manufactured
                     on-site in Pennsylvania using ASME-certified welding and
                     robust 8-gauge elements, ensuring they withstand the extreme
@@ -434,7 +405,7 @@
                   </div>
                   <h3>Accuracy You Can Document.</h3>
                   <p>
-                    NIST traceable calibration (-78°C to 1454°C). ISO 9001:2015
+                    NIST traceable calibration (32°F to 2300°F). ISO 9001:2015
                     certified & ISO/IEC 17025 compliant for guaranteed accuracy.
                   </p>
                 </div>
@@ -442,8 +413,7 @@
                   <div class="feature-icon"><i class="fas fa-headset"></i></div>
                   <h3>Access to Application Expertise</h3>
                   <p>
-                    Choosing the right thermocouple isn't just about matching a
-                    part number; it's about understanding the application. Our
+                    Our
                     in-house specialists are trained in thermodynamics and
                     material science. We don't just sell parts—we provide
                     engineering-level support to ensure you have the optimal
@@ -453,15 +423,8 @@
                 </div>
               </div>
             </div>
-            <div class="image-placeholder-container">
-              <!-- CHANGED: Updated the image source to the new photo -->
-              <img
-                src="images/7.jpg"
-                alt="Photo of our high-quality thermocouples"
-                class="feature-image"
-              />
-            </div>
-          </div>
+      
+          
         </div>
       </section>
       <!-- RESTORED: Full FAQ Section -->
@@ -575,30 +538,7 @@
                 </p>
               </div>
             </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                <h3>
-                  How often should a crematory/retort thermocouple be replaced?
-                </h3>
-                <span class="faq-icon"><i class="fas fa-plus"></i></span>
-              </div>
-              <div class="faq-answer">
-                <p>
-                  There isn't a fixed interval—replacement depends on conditions
-                  and tolerance requirements.
-                </p>
-                <ul>
-                  <li>
-                    Replace if damaged, drifting out of tolerance, or if your
-                    maintenance schedule calls for it.
-                  </li>
-                  <li>
-                    NBS can calibrate assemblies and document results for your
-                    records.
-                  </li>
-                </ul>
-              </div>
-            </div>
+
             <div class="faq-item">
               <div class="faq-question">
                 <h3>Can you match my existing OEM thermocouple?</h3>
@@ -631,7 +571,6 @@
       <section class="emergency-box">
         <div class="container">
           <div class="emergency-content">
-            <i class="fas fa-fire-extinguisher"></i>
             <div class="emergency-text">
               <h3>Retort Down? Need Immediate Help?</h3>
               <p>
