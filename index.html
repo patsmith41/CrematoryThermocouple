@@ -108,6 +108,7 @@
       }
     </script>
   </head>
+  
   <body>
 
 
@@ -153,7 +154,7 @@
           </button>
           <ul class="nav-list">
             <li class="nav-item mobile-cart-link">
-              <a href="#" class="nav-link ec-cart-widget">
+              <a href="#" class="nav-link site-cart-link">
                 <i class="fas fa-shopping-cart"></i> View Cart
                 <span class="cart-count">0</span>
               </a>
@@ -175,7 +176,7 @@
         </nav>
         <div class="header-actions">
           <div class="header-cart" id="my-cart-icon">
-            <a href="#" class="ec-cart-widget">
+            <a href="#" class="site-cart-link">
               <i class="fas fa-shopping-cart"></i>
               <span class="cart-count">0</span>
             </a>
@@ -194,7 +195,7 @@
             <br />Orders before 2pm EST processed same day.
           </p>
           <div class="hero-buttons">
-            <a href="#quote" class="btn btn-primary btn-cta">Request a Quote</a>
+            <a href="contact.html#get-quote" class="btn btn-primary btn-cta">Request a Quote</a>
         
           </div>
           <div class="trust-bar">
@@ -253,15 +254,15 @@
                 <p class="size-selector-label">Select Length:</p>
                 <div class="size-buttons">
                   <!-- ECWID: Replace each button below with Ecwid Buy Now widget -->
-                  <button class="btn-size-buy" data-product="assembly-12">
+                  <button class="btn-size-buy" data-product-id="28613036">
                     <span class="size-label">12-Inch</span>
                     <span class="size-price">$88.00</span>
                   </button>
-                  <button class="btn-size-buy" data-product="assembly-18">
+                  <button class="btn-size-buy" data-product-id="28613583">
                     <span class="size-label">18-Inch</span>
                     <span class="size-price">$103.00</span>
                   </button>
-                  <button class="btn-size-buy" data-product="assembly-24">
+                  <button class="btn-size-buy" data-product-id="28613584">
                     <span class="size-label">24-Inch</span>
                     <span class="size-price">$118.00</span>
                   </button>
@@ -320,22 +321,22 @@
                 <p class="size-selector-label">Select Length:</p>
                 <div class="size-buttons">
                   <!-- ECWID: Replace each button below with Ecwid Buy Now widget -->
-                  <button class="btn-size-buy" data-product="element-12">
+                  <button class="btn-size-buy" data-product-id="84363027">
                     <span class="size-label">For 12" Assembly</span>
                     <span class="size-price">$42.00</span>
                   </button>
-                  <button class="btn-size-buy" data-product="element-18">
+                  <button class="btn-size-buy" data-product-id="84363028">
                     <span class="size-label">For 18" Assembly</span>
                     <span class="size-price">$51.00</span>
                   </button>
-                  <button class="btn-size-buy" data-product="element-24">
+                  <button class="btn-size-buy" data-product-id="84363029">
                     <span class="size-label">For 24" Assembly</span>
                     <span class="size-price">$59.00</span>
                   </button>
                 </div>
                 <p class="bulk-pricing-note">
                   <i class="fas fa-question-circle"></i>
-                  Not sure which size? <a href="#contact">Contact us</a> with
+                  Not sure which size? <a href="contact.html">Contact us</a> with
                   your retort make &amp; model.
                 </p>
               </div>
@@ -357,14 +358,14 @@
                        <br>We custom manufacture, calibrate and document a complete line of thermocouples and RTDs.
                     </p>
                     <div class="banner-actions">
-                      <a href="contact.html#quote" class="btn btn-primary btn-cta"
+                      <a href="contact.html#get-quote" class="btn btn-primary btn-cta"
                         >Request Custom Quote</a
                       >
                       <span class="banner-call">
                       
                         Or visit:
-                        <a href="https://NationalBasicSensor.com" target="_blank" rel="noopener noreferrer">
-                          <strong>NationalBasicSensor.com</strong>
+                        <a href="https://nationalbasicsensor.com" target="_blank" rel="noopener noreferrer">
+                          <strong>Nationalbasicsensor.com</strong>
                         </a>
                       </span>
                     </div>
@@ -603,5 +604,33 @@
     </a>
 
     <script src="app.js"></script>
+    <script data-cfasync="false" type="text/javascript"
+  src="https://app.ecwid.com/script.js?2700003&data_platform=code"></script>
+  <script>
+    Ecwid.OnAPILoaded.add(function() {
+      // Wire size buttons to add to cart
+      document.querySelectorAll('.btn-size-buy').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          Ecwid.Cart.addProduct({ id: parseInt(btn.dataset.productId) });
+          Ecwid.openPage('cart');
+        });
+      });
+  
+      // Update cart count badges when cart changes
+      Ecwid.OnCartChanged.add(function(cart) {
+        document.querySelectorAll('.cart-count').forEach(function(el) {
+          el.textContent = cart.productsQuantity || 0;
+        });
+      });
+  
+      // Cart icon click → open Ecwid cart page
+      document.querySelectorAll('.site-cart-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          Ecwid.openPage('cart');
+        });
+      });
+    });
+  </script>
   </body>
 </html>
