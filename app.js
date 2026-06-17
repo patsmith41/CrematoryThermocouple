@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Mobile menu toggle
+    // mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navList = document.querySelector('.nav-list');
     
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close mobile menu when a link is clicked
+    // close mobile menu when a link is clicked
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- THIS IS THE FAQ CODE THAT NEEDS TO RUN ---
+    // --- faq code needs to run ---
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
-            // Close all other items before opening a new one
+            // close all other items before opening a new one
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
             });
             
-            // If the clicked item wasn't already active, open it
+            // ifffff the clicked item wasn't already active, open it
             if (!isActive) {
                 item.classList.add('active');
             }
