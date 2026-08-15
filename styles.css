@@ -705,3 +705,56 @@ ul { list-style: none; }
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================
+   NBS BRANDING ADDITIONS
+   Append this entire block to the END of styles.css
+   ============================================ */
+
+/* --- Hero eyebrow ("A National Basic Sensor Company") --- */
+.hero-eyebrow {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: var(--spacing-sm);
+    opacity: 0.95;
+}
+
+
+
+/* --- Footer NBS lockup logo --- */
+.footer-nbs-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: var(--spacing-xs);
+    /* white footer-safe treatment: lockup is dark text on transparent,
+       so give it a soft light plate so it reads on the dark footer */
+    background-color: var(--white);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 768px) {
+    .hero-eyebrow {
+        font-size: 0.8rem;
+        letter-spacing: 0.14em;
+    }
+    .nbs-bridge-stamp {
+        width: 70px;
+    }
+    .footer-nbs-logo {
+        width: 170px;
+    }
+}
+
+
+.nbs-section-stamp {
+    display: block;
+    width: 170px;
+    height: auto;
+    margin: var(--spacing-sm) auto 0;
+}
